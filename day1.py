@@ -2,7 +2,7 @@
 # Printing Values
 # Printing Types
 
-'''
+
 name = " Nitish" # Srting
 age = 20         # integer
 height  = 5.89   # float
@@ -25,7 +25,6 @@ print(type(height))
 print(type(is_student))
 print(type(future_plan))
 
-'''
 
 
 # Create variables for your name, age, and favorite color. Print them in a single line.
@@ -34,7 +33,7 @@ print(type(future_plan))
 # 2. Store the values 10 and 3 in two variables. Print their sum, difference, product, and quotient.
 # 3. Assign a floating number (e.g., 7.56) to a variable. Convert it to an integer using int() and print both values.
 
-'''
+
 # 1. 
 name = " Alice"
 age = 18
@@ -56,14 +55,14 @@ int_value = int(float_value)
 print("Float Value : ",float_value)
 print("Int vlaue : ", int_value)
 
-'''
+
 
 
 # 4. Create a variable is_coder and set it to True. Print a sentence:
 # Is Alice a coder? True
 
 # 5. Make a variable x = None. Print its type.
-'''
+
 #4
 is_coder=True
 print("Is Alice a coder?",is_coder)
@@ -71,7 +70,7 @@ print("Is Alice a coder?",is_coder)
 #5
 x=None
 print(type(x))
-'''
+
 
 
 
@@ -79,19 +78,19 @@ print(type(x))
 # 6. Write a program that asks the user for their name and age using input().
 # Then print:
 # Hello <name>, you are <age> years old!
-'''
+
 name = input("Enter user name : ")
 age = int(input("Enter user age"))
 
 print("Hello",name,", you are",age,"year old!")
-'''
+
 
 # 7. Create three variables: length, width, area.
 # Assign numbers to length and width.
 # Calculate the area of a rectangle.
 # Print the result.
 
-'''
+
 
 length=float(input("Enter length"))
 width = float(input("Enter width"))
@@ -99,38 +98,38 @@ width = float(input("Enter width"))
 area_of_rectangle = float(length*width)
 print("Area of Rectangle : ", area_of_rectangle)
 
-'''
+
 # 8. Make variables:
 # first_name = "Alice"
 # last_name = "Smith"
 # Combine them into one variable full_name.
-'''
+
 first_name = "Alice"
 last_name = "Smith"
 
 full_name = first_name+last_name
 print(full_name)
-'''
+
 
 
 # 9. Store True in a variable called is_sunny.
 # If it’s True, print "Let's go outside!"
 # Otherwise, print "Stay inside."
-'''
+
 is_sunny = True
 if is_sunny:
     print("Let's go outside!")
 else:
     print("Stay inside")
 
-'''
+
 
 # 10. Create variables with these values:
 # x = 5
 # y = "5"
 # z = 5.0
 # Print their types and explain why they are different.
-'''
+
 
 x = 5
 y = "5"
@@ -141,11 +140,11 @@ print(type(y), "Y is a String, I know that inside a double quets ssinged value t
 print(type(z), " Band it is a decimal value")
 
 
-'''
+
 
 
 # 11. Swap the values of two variables (without using a third variable)
-'''
+
 a=5
 b=9
 
@@ -154,12 +153,12 @@ b=a-b
 a=a-b
 
 print(f"After swapping a = {a} and b = {b} ")
-'''
+
 
 # 12. Write a program that asks for two numbers from the user and prints:
 # The larger number
 # The smaller number
-'''
+
 
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
@@ -172,21 +171,21 @@ elif num2 > num1:
     print(f"The smaller number is {num1}")
 else:
     print("Both numbers are equal.")
-'''
+
 
 # 13. Create a variable with a string (like "Python Programming").
 # Print its length (len())
 # Print it in uppercase (.upper())
 # Print only the first 6 characters (slicing).
 
-'''
+
 string = "Python Programming"
 
 print(len(string))
 print(string.upper())
 print(string[:6])
 
-'''
+
 
 
 # 14. Create a program that:
@@ -194,7 +193,7 @@ print(string[:6])
 # Calculates your age in 2025
 # Prints: "In 2025, you will be X years old."
 
-''' birth_year = 2005
+ birth_year = 2005
 
 age_in_2025 = 2025-birth_year
 print(f"In 2025, you will be {age_in_2025} years old")
@@ -208,7 +207,7 @@ birth_year = 2005
 current_year = date.today().year   # gets current year automatically
 age = current_year - birth_year
 
-print(f"In {current_year}, you will be {age} years old.")'''
+print(f"In {current_year}, you will be {age} years old.")
 
 
 
@@ -226,3 +225,4 @@ elif 70 <= score < 90:
     print("Grade B")
 else:
     print("Grade C")
+
