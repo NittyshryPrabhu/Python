@@ -1,6 +1,39 @@
-# To Do List APPLICATION USING Conditinal Statement
+# To Do List or CLI APPLICATION USING Conditinal Statement
+
+🔹 What is a CLI App?
+A CLI (Command Line Interface) app is a program that runs in the terminal/command prompt.
+The user interacts with it by typing commands, instead of clicking buttons (like in a GUI app).
+
+🔹 What is a To-do App?
+A To-do App is a small program where we can store, manage, and track our tasks.
+
+Example:
+
+Add a task → "Complete Maths assignment"
+View tasks → Print the full list of tasks
+Complete a task → Mark a task as done
+Delete a task → Remove a task that’s no longer needed
+
+🔹 Workflow of a CLI To-do App
+
+Takes user input (through commands):
+add "Study Python"
+list
+done 2
+delete 3
+
+Stores the data internally
+
+At first, tasks can be stored in a simple list or a file.
+Later, it can be upgraded to use a database.
+
+Displays the output
+Shows tasks with numbering.
+
+If a task is completed, it shows [x].
 
 
+PROGRAM : 
 tasks = []  # for store tasks
 
 while True:
@@ -55,3 +88,4 @@ while True:
 
     else:
         print("Invalid choice! Please enter a valid option (1-5).")
+
