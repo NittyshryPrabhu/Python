@@ -240,3 +240,5 @@ number = int(input("Guessing a number between 1-7 : "))
 
 if number == set :
     print("Correct")
+
+    
