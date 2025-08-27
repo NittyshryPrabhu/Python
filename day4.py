@@ -166,7 +166,17 @@ for i in range(1, row+1):
 
 # 14. Print all prime numbers between 1 and 50
 
+'''
+for num in range(2 , 51):
+    is_prime = True
 
+    for i in range(2, int(num ** 0.5)+1):
+        if num % i == 0:
+            is_prime = False
+            break
+
+    if is_prime:
+        print(num,end=" ")'''
 
 
 
@@ -174,5 +184,13 @@ for i in range(1, row+1):
 # 15. Infinite Loop Safety 🚨
 #  Create a while True: loop that keeps asking the user for input.
 #If the user types "exit", break the loop.
+
+
+while True:
+    types = input("Enter any types")
+
+    if types == "exit":
+        break
+
 
 
