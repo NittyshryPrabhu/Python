@@ -206,15 +206,60 @@ print(calculator(a,b, operator))
 
 # 13. Write a function count_vowels(s) that returns the number of vowels in a string.
 
+'''def count_vowels(s):
+    vowels = "aeiouAEIOU"
+
+    count = 0
+
+    for i in s:
+        if i in vowels:
+            count += 1
+
+        
+    return count
+   
+
+str = input("Enter a string : ")
+
+print(count_vowels(str))'''
 
 
 
 
 # 14. Write a function prime_numbers(n) that prints all prime numbers up to n.
+'''
+def prime_numbers(n):
+    for num in range(2 , n+1):
+        is_prime = True
+        for i in range (2 , int(num**0.5)+1):
+            if num % i == 0:
+                is_prime =False
+                break
+        if is_prime:
+            print(num , end= " ")
 
+limit = int(input("Enter a number up to which you want prime numbers: "))
+print(f"Prime number up to {limit}")
+prime_numbers(limit)
+'''
 
 # 15. Write a function grade(marks) that takes a percentage and returns:
 # ≥ 90 → "A"
 # ≥ 70 → "B"
 # ≥ 50 → "C"
 # Else → "Fail"
+
+
+def grade(marks):
+    if marks >= 90:
+        return "A"
+    elif marks >=70:
+        return "B"
+    elif marks >=50:
+        return "C"
+    else:
+        return "Fail"
+
+percentage = int(input("Enter your obtain percentage: "))
+print(f"Your Grade : {grade(percentage)}")
+grade(percentage)
