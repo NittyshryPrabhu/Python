@@ -244,12 +244,19 @@ else:
 #  Example:
 
 
-# students = {
-#     "Alice": {"Math", "English"},
-#     "Bob": {"Math", "Science"},
-#     "Charlie": {"History", "English"}
-# }
+students = {
+    "Alice": {"Math", "English"},
+    "Bob": {"Math", "Science"},
+    "Charlie": {"History", "English"}
+}
 
 # Print all subjects Alice is taking.
 # Find common subjects between Alice and Bob.
 # Find all unique subjects taken by all students.
+
+print(f"All subjects Alice is taking: ", students["Alice"])
+
+print("common subjects between Alice and Bob: ", students["Alice"] & students["Bob"])
+
+all_subjects = set().union(*students.values())
+print("All unique subjects:", all_subjects)
