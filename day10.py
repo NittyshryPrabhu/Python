@@ -186,26 +186,97 @@ with open("names.txt","w")as file:
 file = open("names.txt","r")
 print(file.read())'''
 
-# Read a file and create a dictionary of word frequencies (how many times each word appears).
+# 15. Read a file and create a dictionary of word frequencies (how many times each word appears).
 
 
-# Merge the contents of two files (file1.txt and file2.txt) into a new file merged.txt.
+'''# file = open("words.txt","x")
 
+file = open("words.txt","w")
+file.write("Hello world , How are you Hello World , I think you are always good Hello world .")
+file = open("words.txt","r")
+content = file.read()
+file.close()
+
+word_list = content.split()
+
+freq = {}
+
+for word in word_list:
+    word =word.lower()
+    freq[word] = freq.get(word , 0) +1
+
+print(freq)'''
+
+# 16. Merge the contents of two files (file1.txt and file2.txt) into a new file merged.txt.
+
+'''file = open("file1.txt","x")
+file = open("file1.txt","w")
+file.write("Hi I'm Nitty, ")
+file.close()
+
+file = open("file2.txt","x")
+file = open("file2.txt","w")
+file.write("I am a Engineering Student.")
+file.close()
+
+file = open("file1.txt","r")
+content1 = file.read()
+
+file = open("file2.txt","r")
+content2 = file.read()
+
+file = open("merged.txt","x")
+
+file = open("merged.txt","w")
+file.write(content1+content2)
+
+file = open("merged.txt","r")
+content3 = file.read()
+
+print(content3)'''
 
 
 # 🔹 Challenge
-# Write a program to create a student gradebook file.
-
+# 17. Write a program to create a student gradebook file.
 
 # Ask user for student name and marks.
-
 
 # Save it in grades.txt in format:
 
 #  Name: Alice, Marks: 85
 # Name: Bob, Marks: 90
 
+'''file = open("grades.txt","w")
 
-# Write a program to read grades.txt and display all students who scored more than 80.
+while True:
+    name = input("Enter a name: ")
+    if name.lower() == 'stop':
+        break
+    marks = int(input("Enter your marks: "))
 
+    file.write(f"Name : {name} , marks : {marks}\n")
 
+# file = open("grades.txt","x")
+
+  
+file = open("grades.txt","r")
+content = file.read()
+
+print(content)
+
+'''
+
+# 18. Write a program to read grades.txt and display all students who scored more than 40.
+
+with open("grades.txt", "r") as file:
+    lines = file.readlines()
+
+print("Students scoring more than 40:\n")
+for line in lines:
+    # Example line: Name: Alice, Marks: 85
+    parts = line.strip().split(",")
+    name = parts[0].split(":")[1].strip()
+    marks = int(parts[1].split(":")[1].strip())
+    
+    if marks > 40:
+        print(f"{name} → {marks}")

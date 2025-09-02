@@ -1,0 +1,6 @@
+Name : Nitish , marks : 50
+Name : Riya , marks : 47
+Name : Sonam , marks : 45
+Name : Pritam , marks : 44
+Name : Raju , marks : 46
+Name : Gossiya , marks : 44

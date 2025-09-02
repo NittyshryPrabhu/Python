@@ -125,3 +125,46 @@ print(Reverse_word)
 '''
 
 
+🔹 String Formatting
+Use an f-string to display:
+ "My name is Alice and I am 20 years old." (take variables name and age).
+
+
+Using format(), print:
+ "The price of an Apple is 50 rupees."
+
+
+Take two numbers a = 5, b = 3 and print:
+ "The sum of 5 and 3 is 8" using f-string.
+
+
+Print the value of pi = 3.14159265 up to 2 decimal places using formatting.
+
+
+Create a mini-bill using formatting:
+
+
+Item: Pen   Price: 10
+Item: Book  Price: 50
+Total = 60
+
+
+🔹 Challenge
+Write a program that takes a sentence from the user and:
+
+
+Counts vowels (a, e, i, o, u).
+
+
+Counts consonants.
+
+
+Prints the results using string formatting.
+
+
+Write a function that takes a name and age, then returns a string:
+ "Hello <name>, you will turn 100 years old in <year>". (Hint: use current year + age).
+
+
+
+
